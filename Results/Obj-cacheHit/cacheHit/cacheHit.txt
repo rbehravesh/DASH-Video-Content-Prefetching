@@ -1,0 +1,32 @@
+Number of Users: 2
+
+Cache Hit at the gNBs: 2
+****************************
+Number of Users: 2
+
+Cache Hit at the gNBs: 2
+****************************
+Number of Users: 2
+
+Cache Hit at the gNBs: 2
+****************************
+Number of Users: 2
+
+Cache Hit at the gNBs: 2
+****************************
+Number of Users: 2
+
+Cache Hit at the gNBs: 2
+****************************
+Number of Users: 2
+
+Cache Hit at the gNBs: 2
+****************************
+Number of Users: 2
+
+Cache Hit at the gNBs: 2
+****************************
+Number of Users: 2
+
+Cache Hit at the gNBs: 2
+****************************

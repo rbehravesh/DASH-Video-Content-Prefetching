@@ -1,0 +1,36 @@
+Number of Users: 2
+
+Execution Time: -0.006165027618408203
+****************************
+Number of Users: 2
+
+Execution Time: 0.0005140304565429688
+****************************
+Number of Users: 2
+
+Execution Time: 0.40293288230895996
+****************************
+Number of Users: 2
+
+Execution Time: 0.42589616775512695
+****************************
+Number of Users: 2
+
+Execution Time: 0.4812018871307373
+****************************
+Number of Users: 2
+
+Execution Time: 0.47403597831726074
+****************************
+Number of Users: 2
+
+Execution Time: Number of Users: 2
+
+Execution Time: Number of Users: 2
+
+Execution Time: 0.05834794044494629
+****************************
+Number of Users: 2
+
+Execution Time: 0.05240511894226074
+****************************

@@ -1,0 +1,32 @@
+Number of Users: 2
+
+Byte Hit at the gNBs: 4
+****************************
+Number of Users: 2
+
+Byte Hit at the gNBs: 4
+****************************
+Number of Users: 2
+
+Byte Hit at the gNBs: 4
+****************************
+Number of Users: 2
+
+Byte Hit at the gNBs: 46400000.0
+****************************
+Number of Users: 2
+
+Byte Hit at the gNBs: 46400000.0
+****************************
+Number of Users: 2
+
+Byte Hit at the gNBs: 46400000.0
+****************************
+Number of Users: 2
+
+Byte Hit at the gNBs: 46400000.0
+****************************
+Number of Users: 2
+
+Byte Hit at the gNBs: 46400000.0
+****************************
