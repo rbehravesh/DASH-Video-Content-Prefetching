@@ -17,6 +17,7 @@ We have generated a comprehensive dataset based on an ns-3 simulated network. Th
 - It's worth noting that our approach can accommodate any ABR algorithm at the client, provided it can be trained on the available data.
 
 [1]. [3GPP Report](https://www.etsi.org/deliver/etsi_tr/136900_136999/136921/09.00.00_60/tr)
+
 [2]. [MPEG/DASH Client-Server ns3 Module](https://github.com/djvergad/dash) (Accessed: Jul. 23, 2020).
 
 ## Getting Started
@@ -72,6 +73,7 @@ Additional tables and results from our evaluations, not included in the main pap
 Please refer to the following papers when using the results, code, or dataset provided in this repository:
 
 - [CNSM 2020](https://ieeexplore.ieee.org/document/9269054)
+- 
 - [TNSM 2022](https://ieeexplore.ieee.org/document/9841468)
 
 These papers describe the dataset generation process and the machine learning approach for predicting video segment bitrates, with the objective of predictively prefetching to the mobile edge.
