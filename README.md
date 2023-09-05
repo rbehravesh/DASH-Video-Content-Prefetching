@@ -1,5 +1,4 @@
 
-```markdown
 # DASH Video Content Prefetching
 
 ## Overview
@@ -76,6 +75,5 @@ Please refer to the following papers when using the results, code, or dataset pr
 - [TNSM 2022](https://ieeexplore.ieee.org/document/9841468)
 
 These papers describe the dataset generation process and the machine learning approach for predicting video segment bitrates, with the objective of predictively prefetching to the mobile edge.
-```
 
 You can copy and paste this code into your README file on GitHub, and make any necessary adjustments or customizations to match your project's details.
