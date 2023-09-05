@@ -4,7 +4,7 @@ This is an Integer Liner Programming model for DASH video content prefecing in m
 This repo containts the codes (MILP, Heuristic, and ML prediction) of research work with the intention to employ MEC for caching DASH video segments. 
 
 
-#download existing dataset
+# Download Generated Dataset
 
 We have generated a huge dataset of an ns-3 simulated network to train and validate the prediction models, and to evaluate the prefetching algorithms. We generated two datasets (available at https://drive.google.com/drive/folders/1VPzpEYxs7kbtZdJYVsPm0Vbn35OB9dYz) from a simulated urban mobile network deployment scenario similar to the scenario described in the 3GPP report  [1]. We use the ns-3 DASH module implemented by Vergados et al. [2] to simulate the DASH client-server interaction for video segment requests and response. The ABR algorithm implemented on the DASH clients uses both network bandwidth and buffer occupancy information to select the bitrate of the segments requested. The set of avail- able bitrates are {1, 2.5, 5, 8, 16, 35} Mbps. Each DASH client implements a video buffer of 30 MB. It is important to emphasize here that our approach can handle any ABR at the client, as long as it can be trained on that data.
 
