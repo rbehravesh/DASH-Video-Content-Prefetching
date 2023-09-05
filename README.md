@@ -1,88 +1,81 @@
-# DASH video content prefetching 
 
-This is an Integer Liner Programming model for DASH video content prefecing in multi-acess edge computing-enabled 5G Networks. Our contribution in this repo is modelling of video content caching and prefetching to ege points of precenses.
-This repo containts the codes (MILP, Heuristic, and ML prediction) of research work with the intention to employ MEC for caching DASH video segments. 
+```markdown
+# DASH Video Content Prefetching
 
+## Overview
 
-# Download generated dataset
+This repository presents an Integer Linear Programming model for DASH (Dynamic Adaptive Streaming over HTTP) video content prefetching in multi-access edge computing-enabled 5G networks. Our primary contribution here is the modeling of video content caching and prefetching to edge points of presence (PoPs). The repository contains implementations of three key components: MILP (Mixed-Integer Linear Programming), Heuristic methods, and Machine Learning-based prediction models. These components are part of a broader research effort aimed at leveraging Mobile Edge Computing (MEC) for caching DASH video segments.
 
-We have generated a huge dataset of an ns-3 simulated network to train and validate the prediction models, and to evaluate the prefetching algorithms. We generated two datasets (available at https://drive.google.com/drive/folders/1VPzpEYxs7kbtZdJYVsPm0Vbn35OB9dYz) from a simulated urban mobile network deployment scenario similar to the scenario described in the 3GPP report  [1]. We use the ns-3 DASH module implemented by Vergados et al. [2] to simulate the DASH client-server interaction for video segment requests and response. The ABR algorithm implemented on the DASH clients uses both network bandwidth and buffer occupancy information to select the bitrate of the segments requested. The set of avail- able bitrates are {1, 2.5, 5, 8, 16, 35} Mbps. Each DASH client implements a video buffer of 30 MB. It is important to emphasize here that our approach can handle any ABR at the client, as long as it can be trained on that data.
+## Download the Generated Dataset
 
+We have generated a comprehensive dataset based on an ns-3 simulated network. This dataset serves multiple purposes, including training and validating prediction models and evaluating prefetching algorithms. The dataset is available [here](https://drive.google.com/drive/folders/1VPzpEYxs7kbtZdJYVsPm0Vbn35OB9dYz).
 
-[1]. “LTE; evolved universal terrestrial radio access (E-UTRA); FDD home eNode B (HeNB) radio frequency (RF) requirements analysis,” ETSI, Sophia Antipolis, France, ETSI Rep. TR 136 921 V9.0.0, 2010. [Online]. Available: https://www.etsi.org/deliver/etsi_tr/136900_136999/ 136921/09.00.00_60/tr
+### Dataset Details
 
-[2] “An MPEG/DASH Client-Server ns3 Module.” [Online]. Available: https://github.com/djvergad/dash (Accessed: Jul. 23, 2020).
+- We simulated an urban mobile network deployment scenario similar to the one described in the 3GPP report [1].
+- We used the ns-3 DASH module implemented by Vergados et al. [2] to simulate the DASH client-server interaction for video segment requests and responses.
+- The Adaptive Bitrate (ABR) algorithm implemented on the DASH clients considers both network bandwidth and buffer occupancy information to select the bitrate of the requested video segments. The set of available bitrates is {1, 2.5, 5, 8, 16, 35} Mbps, and each DASH client has a video buffer of 30 MB.
+- It's worth noting that our approach can accommodate any ABR algorithm at the client, provided it can be trained on the available data.
 
-# To run the code
+[1]. [3GPP Report](https://www.etsi.org/deliver/etsi_tr/136900_136999/136921/09.00.00_60/tr)
+[2]. [MPEG/DASH Client-Server ns3 Module](https://github.com/djvergad/dash) (Accessed: Jul. 23, 2020).
 
-##Install Python3 on you system, using the instructions from here:
-```
-   https://wiki.python.org/moin/BeginnersGuide/Download
-```
-* To install Gurobi for Python and include the installation instructions in a README file on GitHub, you can follow these steps:
+## Getting Started
 
-   ## Installing Gurobi for Python
+### Prerequisites
 
-   This project uses the Gurobi optimization library. Follow these steps to install Gurobi and set it up for Python:
+To run this project, you'll need Python 3 installed on your system. You can download and install Python 3 by following the instructions [here](https://wiki.python.org/moin/BeginnersGuide/Download).
 
-   1. **Obtain a Gurobi License:**
+### Installing Gurobi for Python
 
-      - You can request a free academic license or purchase a commercial license from the [Gurobi website](https://www.gurobi.com/downloads/request-an-academic-license/).
+This project utilizes the Gurobi optimization library. Follow these steps to install Gurobi and set it up for Python:
 
-   2. **Download and Install Gurobi:**
+1. **Obtain a Gurobi License:**
+   - You can request a free academic license or purchase a commercial license from the [Gurobi website](https://www.gurobi.com/downloads/request-an-academic-license/).
 
-      - Download the Gurobi optimizer for your platform (Windows, macOS, Linux) from the [Gurobi download page](https://www.gurobi.com/downloads/gurobi-software/).
-      - Follow the installation instructions provided for your platform.
+2. **Download and Install Gurobi:**
+   - Download the Gurobi optimizer for your platform (Windows, macOS, Linux) from the [Gurobi download page](https://www.gurobi.com/downloads/gurobi-software/).
+   - Follow the installation instructions provided for your platform.
 
-   3. **Install Gurobi Python Interface:**
+3. **Install Gurobi Python Interface:**
+   - Open a terminal or command prompt.
+   - Use pip to install the Gurobi Python package. Replace `your_version` with the version of Gurobi you installed:
 
-      - Open a terminal or command prompt.
-      - Use pip to install the Gurobi Python package. Replace `your_version` with the version of Gurobi you installed:
-
-      ```bash
-      pip install gurobipy==your_version
-      ```
-
-   4. **Verify Installation:**
-
-      To verify that Gurobi is correctly installed, you can run the following Python code in your project:
-
-      ```python
-      import gurobipy as gp
-      ```
-
-   That's it! You've successfully installed Gurobi for Python. You can now use it in your project for optimization tasks.
-
+   ```bash
+   pip install gurobipy==your_version
    ```
 
-   Make sure to replace `your_version` with the actual version of Gurobi you installed. You can also customize the README section as needed for your project.
+4. **Verify Installation:**
+   - To ensure that Gurobi is correctly installed, run the following Python code in your project:
 
-# To run the machine learning algorithms for prediction of bitrate
+   ```python
+   import gurobipy as gp
+   ```
 
-This code is in a different git project that can be cloned from
+You have now successfully installed Gurobi for Python and can use it for optimization tasks in your project.
 
+### Running Machine Learning Algorithms for Bitrate Prediction
+
+The code for machine learning-based bitrate prediction is available in a separate Git repository, which you can clone using the following command:
+
+```bash
 git clone https://github.com/akhila-s-rao/machine-learning-for-edge-enabled-dash.git
-The dataset linked above contains both the raw dataset and the pre-processed data that we used for our machine learning. If you would like to run the machine learning scripts place the folder "data" obtained from the google drive link into the cloned machine-learning-for-edge-enabled-dash directory for the machine learning scripts to be able to access them.
+```
 
+To run the machine learning scripts, place the "data" folder obtained from the Google Drive link mentioned above into the cloned "machine-learning-for-edge-enabled-dash" directory. This allows the machine learning scripts to access the necessary data.
 
-# Appendix with our model results
+## Appendix - Model Results
 
-You can find here an appendix with additional tables showing result from our evaluations that have not been included in our paper for brevity
+Additional tables and results from our evaluations, not included in the main paper for brevity, can be found in the [Appendix](https://github.com/akhila-s-rao/machine-learning-for-edge-enabled-dash/blob/master/documentation/Appendix_Predictive_prefetching_for_edge_assisted_video_streaming.pdf).
 
-https://github.com/akhila-s-rao/machine-learning-for-edge-enabled-dash/blob/master/documentation/Appendix_Predictive_prefetching_for_edge_assisted_video_streaming.pdf
+## References
 
+Please refer to the following papers when using the results, code, or dataset provided in this repository:
 
-# Reference
+- [CNSM 2020](https://ieeexplore.ieee.org/document/9269054)
+- [TNSM 2022](https://ieeexplore.ieee.org/document/9841468)
 
-Here are our papers describing the dataset generation process and the machine learning approach to predict video segment bitrate with the objective of predictively prefetching to the mobile edge, segments of ongoing video streams
+These papers describe the dataset generation process and the machine learning approach for predicting video segment bitrates, with the objective of predictively prefetching to the mobile edge.
+```
 
-This CNSM short paper presents initial results with a solution towards this problem
-
-CNSM 2020 https://ieeexplore.ieee.org/document/9269054
-
-The work was then extended with a reformulation of the solution approach with insight from our previous short paper and concluded in our journal paper
-
-TNSM 2022 https://ieeexplore.ieee.org/document/9841468
-
-Please refer these papers when using the results, code or dataset provided here.
-
+You can copy and paste this code into your README file on GitHub, and make any necessary adjustments or customizations to match your project's details.
