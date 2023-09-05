@@ -10,4 +10,5 @@ We have generated a huge dataset of an ns-3 simulated network to train and valid
 
 
 [1]. “LTE; evolved universal terrestrial radio access (E-UTRA); FDD home eNode B (HeNB) radio frequency (RF) requirements analysis,” ETSI, Sophia Antipolis, France, ETSI Rep. TR 136 921 V9.0.0, 2010. [Online]. Available: https://www.etsi.org/deliver/etsi_tr/136900_136999/ 136921/09.00.00_60/tr
+
 [2] “An MPEG/DASH Client-Server ns3 Module.” [Online]. Available: https://github.com/djvergad/dash (Accessed: Jul. 23, 2020).
