@@ -73,9 +73,8 @@ Additional tables and results from our evaluations, not included in the main pap
 Please refer to the following papers when using the results, code, or dataset provided in this repository:
 
 - [CNSM 2020](https://ieeexplore.ieee.org/document/9269054)
-- 
+  
 - [TNSM 2022](https://ieeexplore.ieee.org/document/9841468)
 
 These papers describe the dataset generation process and the machine learning approach for predicting video segment bitrates, with the objective of predictively prefetching to the mobile edge.
 
-You can copy and paste this code into your README file on GitHub, and make any necessary adjustments or customizations to match your project's details.
